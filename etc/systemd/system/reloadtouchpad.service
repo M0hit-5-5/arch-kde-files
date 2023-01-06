@@ -1,0 +1,11 @@
+[Unit]
+Description=relaod touchpad config
+
+[Service]
+User=root
+WorkingDirectory=/home/mohit/autostart
+ExecStart=/home/mohit/autostart/reloadtouchpad.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
